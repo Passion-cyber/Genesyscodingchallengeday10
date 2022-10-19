@@ -45,7 +45,7 @@ a {
 .fa-big {
   font-size: 25px;
   background-color: var(--white-color);
-  padding: 10px;
+  padding-left: 10px;
 }
 
 section#header {
@@ -108,7 +108,7 @@ li .help,
   flex-direction: row;
   padding: 1rem auto;
   gap: 2rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #main-area .left-area {
@@ -127,8 +127,8 @@ li .help,
 
 .image-wrapper .love-image {
   position: absolute;
-  top: 8px;
-  left: 390px;
+  top: 15px;
+  left: 440px;
   border-radius: 20%;
 }
 
@@ -456,7 +456,20 @@ body{
     flex-direction: column-reverse;
     padding: 1rem auto;
     gap: 0.5rem;
-    border: 1px solid red;
+    border: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .searchbar,
+  .navigation-links{
+    display: none;
+  }
+
+  .image-wrapper .love-image {
+    top: 15px;
+    left: 400px;
+   
   }
 
   .content-wrapper {
