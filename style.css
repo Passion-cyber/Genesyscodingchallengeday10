@@ -48,11 +48,6 @@ a {
   padding-left: 10px;
 }
 
-
-.social-icons .fa-bigg{
-   visibility: hidden;
-}
-
 section#header {
   background-color: var(--white-color);
 }
@@ -63,7 +58,14 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-top: 1rem;
-  /* border: 1px solid  red; */
+  position: relative;
+}
+
+.social-icons .fa-bigg{
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  font-size: 30px;
 }
 
 nav .logo {
@@ -507,16 +509,20 @@ body{
           
     }
 
-    .social-icons .fa-bigg{
-        position: absolute;
+    .fa-bigg{
+        position: relative;
         right: 2px;
         top: 0;
+        display: block;
+        margin-bottom: 5rem;
         color: var(--black-color);
-        visibility: visible;
-    }
-    .social-icons{
+      }
+
+      nav .social-icons i{
         position: relative;
         margin-top: -100px;
+        visibility: visible;
     }
+
 }
 
