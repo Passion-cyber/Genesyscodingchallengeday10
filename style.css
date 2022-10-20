@@ -66,6 +66,7 @@ nav {
   top: 100px;
   right: 10px;
   font-size: 30px;
+  visibility: hidden;
 }
 
 nav .logo {
@@ -431,10 +432,11 @@ li .help,
 }
 
 .btn{
-    width: 80%;
+    width: 90%;
     background-color: var(--blueish-color);
     color: var(--white-color);
     margin-top: 3.5rem;
+    border-radius: 5px;
     border: 1px solid var(--blueish-color);
     text-transform: uppercase;
     text-align: center;
@@ -506,7 +508,11 @@ body{
     .btn{
         width: 100%;
         margin-bottom: 2rem;
-          
+    }
+
+    .social-icons {
+      margin-top: -7rem;
+      margin-left: 2rem;
     }
 
     .fa-bigg{
@@ -518,11 +524,14 @@ body{
         color: var(--black-color);
       }
 
-      nav .social-icons i{
-        position: relative;
-        margin-top: -100px;
+      .social-icons .fa-bigg{
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        font-size: 30px;
         visibility: visible;
-    }
+      }
+      
 
 }
 
