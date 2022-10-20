@@ -48,6 +48,11 @@ a {
   padding-left: 10px;
 }
 
+
+.social-icons .fa-bigg{
+   visibility: hidden;
+}
+
 section#header {
   background-color: var(--white-color);
 }
@@ -58,7 +63,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin-top: 1rem;
-  border: 1px solid  red;
+  /* border: 1px solid  red; */
 }
 
 nav .logo {
@@ -256,6 +261,7 @@ li .help,
 
 .social-icons {
   margin-top: 1rem;
+  margin-left: 1.5rem;
 }
 
 .icons .fa-icon {
@@ -461,14 +467,14 @@ body{
     justify-content: center;
   }
 
-  nav .searchbar,
+  .searchbar,
   .navigation-links{
     display: none;
   }
 
   .image-wrapper .love-image {
     top: 15px;
-    left: 400px;
+    left: 380px;
    
   }
 
@@ -500,7 +506,14 @@ body{
         margin-bottom: 2rem;
           
     }
-    
+
+    .social-icons .fa-bigg{
+        position: absolute;
+        right: 2px;
+        top: 0;
+        color: var(--black-color);
+        visibility: visible;
+    }
     .social-icons{
         position: relative;
         margin-top: -100px;
